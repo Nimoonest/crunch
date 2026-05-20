@@ -8,8 +8,6 @@
 
 Dans le projet **Mini Datacenter Green**, plusieurs services doivent être déployés : sites web clients, DNS, reverse proxy, VPN, supervision, etc. Ces services peuvent être hébergés sur plusieurs plateformes : serveur physique, Raspberry Pi ou serveur externe. L’objectif est de choisir la meilleure répartition des services afin de minimiser la consommation énergétique totale.
 
-> **中文解释：**
-> 本项目可以抽象为一个服务部署优化问题：决定每个服务部署在哪个平台上，使总能耗最低，同时保证性能、安全和可用性。
 
 ---
 
@@ -30,8 +28,6 @@ min Σ_{j∈J} (P_idle_j · y_j + P_load_j · charge_j)
 - **P_load_j** : consommation supplémentaire liée à la charge
 - **charge_j** : taux d’utilisation de la plateforme *j*
 
-> **中文解释：**
-> 总能耗 = 已启动设备的基础功耗 + 由运行负载产生的额外功耗。
 
 ---
 
@@ -160,8 +156,6 @@ Chaque service doit respecter un niveau minimal de performance.
 ### Idée d’optimisation
 L’optimisation consiste à affecter les services aux plateformes tout en respectant les contraintes de ressources, de compatibilité réseau, de performance et de consommation énergétique.
 
-> **中文解释：**
-> 优化的本质，就是在“服务 → 平台 → 网络区域”的映射中找到最节能且满足全部约束的部署方案。
 
 ---
 
@@ -185,8 +179,7 @@ L’optimisation consiste à affecter les services aux plateformes tout en respe
 
 Ce modèle permet de comparer plusieurs architectures d’hébergement et d’identifier le meilleur compromis entre consommation énergétique, performance, sécurité et flexibilité. Il transforme le choix technique du mini-datacenter en un problème d’optimisation sous contraintes.
 
-> **中文总结：**
-> 该模型把“如何降低能耗”转化为一个可解释的优化问题，可以帮助比较服务器、Raspberry Pi 和混合架构之间的能耗与性能权衡。
+
 
 ---
 
